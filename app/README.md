@@ -1,6 +1,6 @@
 # Задание 3 - создание приложения
  1) Тут все было довольно просто, создаем конфиг nginx, страничку index.html и Dockerfile.  
- Смотреть тут: [https://github.com/SkillPropil/spapp](spapp)  
+ Смотреть тут: [spapp](https://github.com/SkillPropil/spapp)  
  2) Далее собираем образ и пушим его в registry (Docker Hub)  
 ```
 docker login -u nixao70@gmail.com -p pwd
