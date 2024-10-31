@@ -119,6 +119,7 @@ spec:
  5) Делаем ``` kubectl apply -f deployment.yaml service.yaml ```
 <img width="1272" alt="jenkins" src="https://github.com/user-attachments/assets/dbe1f39e-b688-4c8e-80bc-31b291582aab">  
  6) Чтобы работали пайпы создаем сервисный аккаунт jenkins и назначаем ему роль  
+
 ```
 kubectl create sa jenkins
 kubectl create clusterrolebinding cesar3 \
