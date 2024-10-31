@@ -2,7 +2,7 @@
 ## Мониторинг
  1) Клонируем репозиторий ``` https://github.com/prometheus-operator/kube-prometheus ```
  2) Удаляем файл ``` grafana-networkPolicy.yaml ``` и правим ``` grafana-service.yaml ``` на:
-    ```
+```
 ---
 apiVersion: v1
   kind: Service
