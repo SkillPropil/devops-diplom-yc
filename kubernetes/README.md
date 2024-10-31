@@ -1,6 +1,6 @@
 # Второе задание - создание кластера Kubernetes
  1) Склонировал репозиторий в папку с terraform  ``` git clone https://github.com/kubernetes-sigs/kubespray ```
- 2) Создал файл inventory.tf и inventory.tpl в предыдущем этапе [../terraform/inventory.tf](inventory.tf)  [../terraform/inventory.tpl](inventory.tpl)  
+ 2) Создал файл inventory.tf и inventory.tpl в предыдущем этапе [inventory.tf](../terraform/inventory.tf)  [inventory.tpl](../terraform/inventory.tpl)  
  3) Запустил ``` terraform apply ``` и в директории создался файл ``` /terraform/kubespray/inventory/mycluster/inventory-default.ini ```  
  4) Установил зависимости kubespray ``` pip3 install -r requirements.txt ```  
  5) Далее запустил плейбук и кластер раскатился  
