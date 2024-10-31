@@ -29,7 +29,7 @@ USER jenkins
 # Expose default Jenkins port
 EXPOSE 8080
 ```  
- 3) После создания докерфайла он был запушен в мой репозиторий на DockerHub [https://hub.docker.com/repository/docker/skillpropil/spjenkins/general](репа)  
+ 3) После создания докерфайла он был запушен в мой репозиторий на DockerHub [репа](https://hub.docker.com/repository/docker/skillpropil/spjenkins/general)  
  4) Далее зашел на мастер-ноду и создал деплоймент с сервисом  
 ### deployment.yaml  
 ```
@@ -130,13 +130,13 @@ clusterrolebinding.rbac.authorization.k8s.io/cesar3 created
 ```  
 ## Пайплайны
 ### Пайп1
- 1) Создал репу и загрузил туда свое приложение [https://github.com/SkillPropil/spapp](Приложение)  
- 2) Создал пайп, чтобы при любом коммите происходила сборка и пуш в докер реджистри [https://github.com/SkillPropil/spapp/blob/main/Jenkinsfile](Jenkinsfile)  
+ 1) Создал репу и загрузил туда свое приложение [Приложение](https://github.com/SkillPropil/spapp)  
+ 2) Создал пайп, чтобы при любом коммите происходила сборка и пуш в докер реджистри [Jenkinsfile](https://github.com/SkillPropil/spapp/blob/main/Jenkinsfile)  
  3) А также добавил хук. Успешный запуск на скринах
     <img width="1262" alt="hook" src="https://github.com/user-attachments/assets/6b8bd424-ba8f-4423-a364-4d6c5d72dcc4">  
     <img width="1313" alt="Снимок экрана 2024-11-01 в 01 41 21" src="https://github.com/user-attachments/assets/fb37482b-b495-48af-b243-459cb84b9c13">  
 ### Пайп2 
- 1) Создал пайп, чтобы при любом коммите происходила сборка и пуш в докер реджистри [https://github.com/SkillPropil/spapp/blob/main/Pipelinefile](Pipelinefile)  
+ 1) Создал пайп, чтобы при любом коммите происходила сборка и пуш в докер реджистри [Pipelinefile](https://github.com/SkillPropil/spapp/blob/main/Pipelinefile)  
  2) Пайп отличается тем, что если пушить без тега - образ не будет задеплоен. Поэтому можно было бы обойтись и без первого пайпа.
 <img width="1372" alt="Снимок экрана 2024-10-31 в 22 57 57" src="https://github.com/user-attachments/assets/44c1aa19-3f26-422e-a89d-530e251f30ed">  
 <img width="1261" alt="Снимок экрана 2024-11-01 в 01 21 08" src="https://github.com/user-attachments/assets/23fdedb8-bcc5-4d3f-ab87-1eeccdacda86">  
