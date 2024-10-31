@@ -25,11 +25,10 @@ apiVersion: v1
       app.kubernetes.io/name: grafana
       app.kubernetes.io/part-of: kube-prometheus
     type: NodePort
-    ```  
+```  
  3) Далее применяем все это дело:  
- ```
- kubectl apply --server-side -f /home/ubuntu/monitoring_kubernetes/manifests/setup -f /home/ubuntu/monitoring_kubernetes/manifests
- ```
+``` kubectl apply --server-side -f /home/ubuntu/monitoring_kubernetes/manifests/setup -f /home/ubuntu/monitoring_kubernetes/manifests ```
+
 Наслаждаемся мониторингом. 
 
 <img width="1321" alt="Снимок экрана 2024-11-01 в 01 05 11" src="https://github.com/user-attachments/assets/210138d5-c721-42d4-9fb7-85f2d9efa7cf">  
